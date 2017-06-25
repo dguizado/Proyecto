@@ -4,8 +4,14 @@
 #include"miLista.h"
 
 ElementoLista *Lista_Ultimo(ListaEnlazada *lista){
-   ElementoLista *ultimo;
-   ultimo = (ElementoLista*)malloc(sizeof(ElementoLista));
-   ultimo = lista->ancla.anterior;
-   return ultimo;
+ if(lista->numeroElementos==0){
+        return NULL;
+    }
+
+    else{
+
+        ElementoLista *d_ancla = &(lista->ancla);
+        ElementoLista *anterior = d_ancla->anterior;
+        return anterior;
+    }
 }
