@@ -1,3 +1,8 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<stddef.h>
+#include"miLista.h"
 ElementoLista *Lista_Primero(ListaEnlazada *lista){
     if(lista->numeroElementos==0){//Si la lista esta vacia retorna NULL
         return NULL;

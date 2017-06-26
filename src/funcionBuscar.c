@@ -13,9 +13,9 @@ if(lista->numeroElementos==0){  //si en la lista no hay elementos entonces devue
 //Se crea un nuevo ElementoLista y se le asigna espacio de memoria
         ElementoLista *elemento=(ElementoLista *)malloc(sizeof(ElementoLista));
         elemento =Lista_Primero(lista);
-        int i=0;
+        
         int numeroElementos=Lista_Conteo(lista);
-        for (i ; i<numeroElementos ; i++) { //se recorre los elementos de la lista
+        for (int i=0 ; i<numeroElementos ; i++) { //se recorre los elementos de la lista
                         if(elemento->objeto == objeto){ //Se valida si el objeto almacenado en ese elemento de la lista coincide con el objeto a buscar
                             return elemento; //si coincide, retorna el elemento
                         }  
